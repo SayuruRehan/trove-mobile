@@ -2,5 +2,11 @@
     <string name="app_name">Trove-mobile</string>
 
 <!-- Get Started -->
-    <string name="get_started">Let\'s Started</string>
+    <string name="get_started">Get Started</string>
+
+
+<!--    login-->
+    <string name="login_heading">Login</string>
+    <string name="login_username">Username</string>
+    <string name="login_password">Password</string>
 </resources>
