@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="100dp"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginVertical="50dp"
+        android:text="@string/login_heading"
+        android:textAlignment="center"
+        android:textSize="24dp" />
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="36dp"
+        android:width="300dp"
+        android:layout_marginHorizontal="50dp"
+        android:background="@drawable/custom_text_input"
+        android:ems="10"
+        android:inputType="text"
+        android:padding="10dp"
+        android:hint="@string/login_username" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="300dp"
+        android:background="@drawable/custom_text_input"
+        android:ems="10"
+        android:layout_marginHorizontal="50dp"
+        android:inputType="text"
+        android:padding="10dp"
+        android:hint="@string/login_password" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_get_started"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:width="300dp"
+        android:backgroundTint="@color/orange"
+        android:layout_marginVertical="40dp"
+        android:layout_marginHorizontal="50dp"
+        android:text="@string/login_heading"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:paddingVertical="10dp"
+        app:cornerRadius="5dp" />
+</LinearLayout>
