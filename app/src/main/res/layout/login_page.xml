@@ -4,56 +4,110 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingTop="100dp"
+    android:paddingTop="10dp"
     android:layout_centerHorizontal="true"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:backgroundTint="@color/white">
+
+    <ImageButton
+        android:id="@+id/imageButtonBackLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="back_button"
+        app:srcCompat="@drawable/arrow_back"
+        android:background="@android:color/transparent"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="40dp"/>
+
 
     <TextView
         android:id="@+id/login"
-        android:layout_width="300dp"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="50dp"
         android:layout_marginVertical="50dp"
         android:text="@string/login_heading"
+        android:paddingTop="100dp"
         android:textAlignment="center"
         android:textSize="24dp" />
 
+    <TextView
+        android:id="@+id/textViewUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:textSize="16sp"
+        android:text="@string/login_username" />
+
     <EditText
         android:id="@+id/editTextUsername"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
         android:layout_marginBottom="36dp"
         android:width="300dp"
-        android:layout_marginHorizontal="50dp"
         android:background="@drawable/custom_text_input"
         android:ems="10"
         android:inputType="text"
-        android:padding="10dp"
-        android:hint="@string/login_username" />
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/textViewPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:textSize="16sp"
+        android:text="@string/login_password" />
 
     <EditText
         android:id="@+id/editTextPassword"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
         android:width="300dp"
         android:background="@drawable/custom_text_input"
         android:ems="10"
-        android:layout_marginHorizontal="50dp"
-        android:inputType="text"
-        android:padding="10dp"
-        android:hint="@string/login_password" />
+        android:inputType="textPassword"
+        android:padding="10dp" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/button_get_started"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginVertical="40dp"
         android:width="300dp"
         android:backgroundTint="@color/orange"
-        android:layout_marginVertical="40dp"
-        android:layout_marginHorizontal="50dp"
+        android:paddingVertical="10dp"
         android:text="@string/login_heading"
         android:textColor="@color/white"
         android:textSize="20sp"
-        android:paddingVertical="10dp"
         app:cornerRadius="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/dont_have_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="120dp"
+            android:text="@string/dont_have_account"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/linkTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/signup_link"
+            android:textColor="@color/orange"
+            android:textAlignment="center"
+            android:textSize="16sp"/>
+
+
+
+    </LinearLayout>
+
 </LinearLayout>

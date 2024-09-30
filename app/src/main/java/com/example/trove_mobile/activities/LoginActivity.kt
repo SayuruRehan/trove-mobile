@@ -1,6 +1,9 @@
 package com.example.trove_mobile.activities
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageButton
+import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -16,6 +19,20 @@ class LoginActivity : AppCompatActivity(){
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
+        }
+
+        val backButton = findViewById<ImageButton>(R.id.imageButtonBackLogin)
+
+        backButton.setOnClickListener{
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+
+        val signupButton = findViewById<TextView>(R.id.linkTextView)
+
+        signupButton.setOnClickListener{
+            val intent = Intent(this, SignupActivity::class.java)
+            startActivity(intent)
         }
     }
 }

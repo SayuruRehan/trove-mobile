@@ -9,4 +9,6 @@
     <string name="login_heading">Login</string>
     <string name="login_username">Username</string>
     <string name="login_password">Password</string>
+    <string name="dont_have_account">Don\'t have an account?</string>
+    <string name="signup_link">Signup</string>
 </resources>
