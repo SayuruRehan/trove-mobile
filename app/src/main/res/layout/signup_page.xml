@@ -1,17 +1,156 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical"
+    android:backgroundTint="@color/white">
 
-    <TextView
-        android:id="@+id/textView"
+    <ImageButton
+        android:id="@+id/imageButtonBackSignup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Signup"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:contentDescription="back_button"
+        app:srcCompat="@drawable/arrow_back"
+        android:background="@android:color/transparent"
+        android:paddingHorizontal="20dp"
+        android:paddingTop="40dp"/>
+
+
+    <TextView
+        android:id="@+id/signup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginVertical="50dp"
+        android:text="@string/signup_heading"
+        android:paddingTop="50dp"
+        android:textAlignment="center"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/textViewUsernameSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:textSize="16sp"
+        android:text="@string/signup_username" />
+
+    <EditText
+        android:id="@+id/editTextUsernameSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginBottom="36dp"
+        android:width="300dp"
+        android:background="@drawable/custom_text_input"
+        android:ems="10"
+        android:inputType="text"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/textViewEmailSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:textSize="16sp"
+        android:text="@string/signup_email" />
+
+    <EditText
+        android:id="@+id/editTextEmailSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginBottom="36dp"
+        android:autofillHints="test@example.com"
+        android:width="300dp"
+        android:background="@drawable/custom_text_input"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:padding="10dp"
+        tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/textViewPasswordSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:textSize="16sp"
+        android:text="@string/signup_password" />
+
+    <EditText
+        android:id="@+id/editTextPasswordSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:width="300dp"
+        android:background="@drawable/custom_text_input"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_marginBottom="36dp"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/textViewReenterPasswordSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:textSize="16sp"
+        android:text="@string/signup_reenter_password" />
+
+    <EditText
+        android:id="@+id/editTextReenterPasswordSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:autofillHints="password"
+        android:width="300dp"
+        android:background="@drawable/custom_text_input"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:padding="10dp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_get_started"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginVertical="40dp"
+        android:width="300dp"
+        android:backgroundTint="@color/orange"
+        android:paddingVertical="10dp"
+        android:text="@string/signup_heading"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:cornerRadius="5dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/have_account_already"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="@string/have_account_already"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/linkTextViewSignup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/login_link"
+            android:textColor="@color/orange"
+            android:textAlignment="center"
+            android:textSize="16sp"/>
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
