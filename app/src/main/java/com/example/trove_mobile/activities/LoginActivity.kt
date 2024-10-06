@@ -14,6 +14,7 @@ import com.example.trove_mobile.R
 import com.example.trove_mobile.models.api.LoginRequest
 import com.example.trove_mobile.models.api.LoginResponse
 import com.example.trove_mobile.repositories.AuthRepository
+import com.example.trove_mobile.utils.TokenManager
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -55,6 +56,9 @@ class LoginActivity : AppCompatActivity() {
                     override fun onResponse(call: Call<LoginResponse>, response: Response<LoginResponse>) {
                         if (response.isSuccessful) {
                             val loginResponse = response.body()
+                            loginResponse?.token?.let {
+                                TokenManager.saveToken(it)
+                            }
                             Toast.makeText(this@LoginActivity, "Login successful!", Toast.LENGTH_SHORT).show()
                             // Navigate to HomeActivity
                             val intent = Intent(this@LoginActivity, HomeActivity::class.java)
