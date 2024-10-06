@@ -7,6 +7,7 @@
     android:paddingTop="10dp"
     android:layout_centerHorizontal="true"
     android:orientation="vertical"
+    android:background="@color/white"
     android:backgroundTint="@color/white">
 
     <ImageButton
@@ -77,10 +78,9 @@
         android:layout_marginHorizontal="50dp"
         android:layout_marginVertical="40dp"
         android:width="300dp"
-        android:backgroundTint="@color/orange"
+        android:backgroundTint="@color/dark"
         android:paddingVertical="10dp"
         android:text="@string/login_heading"
-        android:textColor="@color/white"
         android:textSize="20sp"
         app:cornerRadius="5dp" />
 
@@ -102,7 +102,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/signup_link"
-            android:textColor="@color/orange"
+            android:textColor="@color/grey"
             android:textAlignment="center"
             android:textSize="16sp"/>
 

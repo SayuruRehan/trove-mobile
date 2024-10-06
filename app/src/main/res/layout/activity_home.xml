@@ -1,10 +1,65 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
+    android:id="@+id/home"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp"
+    android:backgroundTint="@color/white"
     tools:context=".activities.HomeActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <!-- Profile Icon -->
+    <ImageView
+        android:id="@+id/profile_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="end"
+        android:src="@drawable/profile_image"
+    android:contentDescription=""/>
+
+    <!-- Search Bar -->
+    <com.google.android.material.search.SearchBar
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="Search for products"
+        android:padding="5dp"
+        android:background="@android:drawable/editbox_background"
+        android:drawableLeft="@android:drawable/ic_menu_search"
+        android:inputType="text"/>
+
+    <!-- Scrollable Category Filter -->
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:paddingBottom="8dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Categories -->
+
+            <include layout="@layout/category_button" />
+            <include layout="@layout/category_button" />
+            <include layout="@layout/category_button" />
+            <include layout="@layout/category_button" />
+            <include layout="@layout/category_button" />
+            <!-- Add more buttons as needed -->
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- Item List -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/item_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>
