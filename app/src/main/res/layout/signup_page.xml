@@ -19,6 +19,15 @@
         android:background="@android:color/transparent"
         android:paddingHorizontal="20dp"
         android:paddingTop="40dp"/>
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
 
 
     <TextView
@@ -26,9 +35,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="50dp"
-        android:layout_marginVertical="50dp"
+        android:layout_marginBottom="10dp"
         android:text="@string/signup_heading"
-        android:paddingTop="50dp"
         android:textAlignment="center"
         android:textSize="24sp" />
 
