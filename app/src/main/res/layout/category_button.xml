@@ -10,7 +10,7 @@
         android:id="@+id/category"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/dark"
+        android:backgroundTint="@color/blue"
         android:text="category 1"
         android:textColor="@color/white"
         android:textSize="16sp"

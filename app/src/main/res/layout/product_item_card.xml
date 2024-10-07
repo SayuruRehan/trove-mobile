@@ -41,7 +41,7 @@
             android:text="$100"
             android:paddingHorizontal="10dp"
             android:textSize="16sp"
-            android:textColor="@android:color/holo_red_dark" />
+            android:textColor="@color/blue" />
 
         <!-- Add to Cart Button -->
         <Button
@@ -52,7 +52,7 @@
             android:layout_marginBottom="10dp"
             android:text="Add to Cart"
             android:layout_marginHorizontal="10dp"
-            android:backgroundTint="@color/dark" />
+            android:backgroundTint="@color/blue" />
 
     </LinearLayout>
 </com.google.android.material.card.MaterialCardView>

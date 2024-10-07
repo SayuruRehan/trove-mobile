@@ -1,5 +1,6 @@
 package com.example.trove_mobile.activities
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -10,6 +11,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.trove_mobile.R
 import com.example.trove_mobile.adapters.EcommerceItemAdapter
 import com.example.trove_mobile.models.EcommerceItem
+import com.google.android.material.bottomnavigation.BottomNavigationView
+
 
 class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -38,5 +41,30 @@ class HomeActivity : AppCompatActivity() {
 
         // Set the Adapter
         recyclerView.adapter = EcommerceItemAdapter(items)
+
+        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_navigation)
+        bottomNavigationView.setOnNavigationItemSelectedListener { item ->
+            when (item.itemId) {
+                R.id.navigation_home -> {
+                    // Navigate to Home screen
+                    val intent = Intent(this, HomeActivity::class.java)
+                    startActivity(intent)
+                    true
+                }
+                R.id.navigation_cart -> {
+                    // Navigate to Cart screen
+                    // Add your intent or action here
+                    true
+                }
+                R.id.navigation_account -> {
+                    // Navigate to Account screen
+                    // Add your intent or action here
+                    true
+                }
+                else -> false
+            }
+        }
+
+
     }
 }
