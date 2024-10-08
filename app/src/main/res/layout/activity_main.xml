@@ -13,9 +13,9 @@
         android:id="@+id/button_get_started"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/blue"
+        android:backgroundTint="@color/dark"
         android:text="@string/get_started"
-        android:textColor="@color/white"
+        android:textColor="@color/light_green"
         android:textSize="20sp"
         app:cornerRadius="5dp"
         app:icon="@drawable/arrow_forward"
@@ -33,26 +33,13 @@
     <ImageView
         android:id="@+id/logo"
         android:layout_width="match_parent"
-        android:layout_height="150dp"
-        android:layout_marginTop="108dp"
+        android:layout_height="200dp"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="112dp"
         android:scaleType="centerInside"
         android:src="@drawable/trove_logo"
         app:layout_constraintTop_toTopOf="parent"
-        tools:layout_editor_absoluteX="0dp" />
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Shop smart, live better."
-        app:layout_constraintBottom_toTopOf="@+id/button_get_started"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:textSize="20sp"
-        android:textColor="@color/grey"
-        android:textStyle="italic"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/logo"
-        app:layout_constraintVertical_bias="0.05" />
+        tools:layout_editor_absoluteX="9dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

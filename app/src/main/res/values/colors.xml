@@ -2,12 +2,11 @@
 <resources>
     <color name="black">#101827</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="dark">#111213</color>
+    <color name="dark">#000000</color>
     <color name="linen">#FEF1E6</color>
-    <color name="lightblue">#cfe2ff</color>
-    <color name="skyblue">#9ec5fe</color>
-    <color name="softblue">#6ea8fe</color>
-    <color name="blue">#0d6efd</color>
+    <color name="lime">#92CF34</color>
+    <color name="light_green">#F4FFE3</color>
+    <color name="apple_green">#8BB334</color>
     <color name="light_grey">#EDEEEF</color>
     <color name="red">#FF0000</color>
     <color name="grey">#5D5D64</color>

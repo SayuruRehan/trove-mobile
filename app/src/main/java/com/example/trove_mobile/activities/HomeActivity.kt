@@ -93,7 +93,7 @@ class HomeActivity : AppCompatActivity() {
                     marginStart = 10
                     marginEnd = 10
                 }
-                setBackgroundColor(resources.getColor(R.color.blue)) // Set background color
+                setBackgroundColor(resources.getColor(R.color.apple_green)) // Set background color
                 setTextColor(resources.getColor(R.color.white)) // Set text color
                 textSize = 16f
                 cornerRadius = 10

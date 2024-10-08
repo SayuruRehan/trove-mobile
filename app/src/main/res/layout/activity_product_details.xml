@@ -53,7 +53,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
                 android:textStyle="bold"
-                android:textColor="@color/blue"
+                android:textColor="@color/apple_green"
                 android:layout_marginBottom="8dp"
                 android:text="Price: $0.00"/>
 
@@ -79,7 +79,7 @@
                     android:layout_height="wrap_content"
                     app:cornerRadius="5dp"
                     android:textColor="@color/white"
-                    app:backgroundTint="@color/blue"
+                    app:backgroundTint="@color/apple_green"
                     android:layout_weight="1"
                     android:text="Add to Cart"/>
 
@@ -89,8 +89,8 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     app:cornerRadius="5dp"
-                    android:textColor="@color/blue"
-                    app:backgroundTint="@color/lightblue"
+                    android:textColor="@color/light_green"
+                    app:backgroundTint="@color/dark"
                     android:text="Checkout"
                     android:layout_marginStart="8dp"/>
             </LinearLayout>
@@ -139,8 +139,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 app:cornerRadius="5dp"
-                android:textColor="@color/white"
-                app:backgroundTint="@color/blue"
+                android:textColor="@color/light_green"
+                app:backgroundTint="@color/dark"
                 android:text="Submit Comment"/>
         </LinearLayout>
     </ScrollView>
@@ -151,13 +151,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        app:itemRippleColor="@color/skyblue"
-        app:itemTextColor="@color/blue"
-        app:itemActiveIndicatorStyle="@color/lightblue"
-        app:itemIconTint="@color/blue"
+        app:itemRippleColor="@color/light_green"
+        app:itemTextColor="@color/apple_green"
+        app:itemActiveIndicatorStyle="@color/light_green"
+        app:itemIconTint="@color/apple_green"
         app:itemTextAppearanceActiveBoldEnabled="true"
         app:itemIconSize="30dp"
-        app:backgroundTint="@color/lightblue"
+        app:backgroundTint="@color/light_green"
         app:menu="@drawable/bottom_nav_menu" />
 
 </RelativeLayout>

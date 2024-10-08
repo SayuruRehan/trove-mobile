@@ -70,13 +70,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        app:itemRippleColor="@color/skyblue"
-        app:itemTextColor="@color/blue"
-        app:itemActiveIndicatorStyle="@color/lightblue"
-        app:itemIconTint="@color/blue"
+        app:itemRippleColor="@color/light_green"
+        app:itemTextColor="@color/apple_green"
+        app:itemActiveIndicatorStyle="@color/light_green"
+        app:itemIconTint="@color/apple_green"
         app:itemTextAppearanceActiveBoldEnabled="true"
         app:itemIconSize="30dp"
-        app:backgroundTint="@color/lightblue"
+        app:backgroundTint="@color/light_green"
         app:menu="@drawable/bottom_nav_menu" />
 
 </RelativeLayout>

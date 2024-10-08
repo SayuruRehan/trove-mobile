@@ -48,7 +48,7 @@
                 android:layout_height="wrap_content"
                 android:text="Price: $10.00"
                 android:textSize="16sp"
-                android:textColor="@color/blue"
+                android:textColor="@color/apple_green"
                 android:layout_marginBottom="4dp" />
 
             <!-- Quantity Controls -->
@@ -66,7 +66,7 @@
                     app:iconGravity="textStart"
                     app:iconPadding="0dp"
                     app:cornerRadius="50dp"
-                    android:backgroundTint="@color/lightblue"
+                    android:backgroundTint="@color/dark"
                     android:minHeight="0dp"
                     android:minWidth="0dp"
                     android:contentDescription="Reduce items from an item"
@@ -91,7 +91,7 @@
                     app:iconGravity="textStart"
                     app:iconPadding="0dp"
                     app:cornerRadius="50dp"
-                    android:backgroundTint="@color/lightblue"
+                    android:backgroundTint="@color/dark"
                     android:minHeight="0dp"
                     android:minWidth="0dp"
                     android:layout_marginStart="8dp"
