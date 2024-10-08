@@ -1,3 +1,5 @@
+// IT21171338 - TENNAKOON T. M. T. C.-  HOME ACTIVITY
+
 package com.example.trove_mobile.activities
 
 import android.content.Intent
@@ -69,6 +71,9 @@ class HomeActivity : AppCompatActivity() {
                 }
                 R.id.navigation_account -> {
                     // Navigate to Account screen
+                    val intent = Intent(this, ProfileActivity::class.java)
+                    startActivity(intent)
+                    true
                     true
                 }
                 else -> false

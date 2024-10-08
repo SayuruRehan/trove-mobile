@@ -1,3 +1,5 @@
+// IT21171338 - TENNAKOON T. M. T. C.- BASE ACTIVITY
+
 package com.example.trove_mobile.activities
 
 import android.content.Intent

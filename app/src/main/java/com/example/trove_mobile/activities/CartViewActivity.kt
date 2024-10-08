@@ -1,3 +1,5 @@
+// IT21171338 - TENNAKOON T. M. T. C.- CART VIEW ACTIVITY
+
 package com.example.trove_mobile.activities
 
 import android.os.Bundle
@@ -34,11 +36,7 @@ class CartViewActivity : AppCompatActivity() {
         // Return your list of cart items (this is just a placeholder)
         return listOf(
 
-            CartItem("Item 2", 15.50, 2),
-            CartItem( "Item 3", 13.00, 3),
-            CartItem("Item 1", 10.00, 1),
-            CartItem("Item 2", 15.50, 2),
-            CartItem( "Item 3", 13.00, 3)
+            CartItem("Red Duffel Bag", 3500.00, 1)
         )
     }
 

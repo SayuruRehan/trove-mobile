@@ -1,3 +1,5 @@
+// IT21171338 - TENNAKOON T. M. T. C.-  ECOMMERCEITEM ADAPTER
+
 package com.example.trove_mobile.adapters
 
 import android.content.Context
@@ -38,7 +40,7 @@ class EcommerceItemAdapter(private val context: Context ,private val items: List
         Log.d("EcommerceAdapter", "Items: ${item}");
 
         // Debugging logs
-        Log.d("EcommerceAdapter","Binding item: ${item.productName}, Price: ${item.productPrice}, Image URL: ${item.imageUrl}")
+        Log.d("EcommerceAdapter","Binding item: ${item.productName}, Price: Rs. ${item.productPrice}, Image URL: ${item.imageUrl}")
 
         // Set product details
         holder.productName.text = item.productName
@@ -57,7 +59,7 @@ class EcommerceItemAdapter(private val context: Context ,private val items: List
         // Set item data
         Picasso.get().load(item.imageUrl).into(holder.productImage)
         holder.productName.text = item.productName
-        holder.productPrice.text = "Price: $${item.productPrice}"
+        holder.productPrice.text = "Price: Rs. ${item.productPrice}"
 
         // Set click listener
         holder.itemView.setOnClickListener {

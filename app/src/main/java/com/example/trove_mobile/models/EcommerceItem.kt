@@ -1,3 +1,5 @@
+// IT21171338 - TENNAKOON T. M. T. C.-  ECOMMERCE ITEM MODEL
+
 package com.example.trove_mobile.models
 
 import java.io.Serializable

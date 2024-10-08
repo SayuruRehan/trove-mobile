@@ -1,3 +1,5 @@
+// IT21171338 - TENNAKOON T. M. T. C.-  CARTITEM ADAPTER
+
 package com.example.trove_mobile.adapters
 
 import android.view.LayoutInflater
@@ -17,7 +19,7 @@ class CartItemAdapter(private val cartItems: List<CartViewActivity.CartItem>) : 
 
         fun bind(item: CartViewActivity.CartItem) {
             itemNameTextView.text = item.name
-            itemPriceTextView.text = "Price: $${item.price}"
+            itemPriceTextView.text = "Price: Rs. ${item.price}"
             itemQuantityTextView.text = item.quantity.toString()
         }
     }

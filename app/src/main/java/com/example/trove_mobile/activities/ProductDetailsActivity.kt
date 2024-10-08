@@ -1,3 +1,5 @@
+// IT21171338 - TENNAKOON T. M. T. C.-  PRODUCT DETAILS ACTIVITY
+
 package com.example.trove_mobile.activities
 
 import android.content.Intent
@@ -35,7 +37,7 @@ class ProductDetailsActivity : AppCompatActivity() {
 
         itemName.text = item.productName
         itemDescription.text = item.description
-        itemPrice.text = "Price: $${item.productPrice}"
+        itemPrice.text = "Price: Rs. ${item.productPrice}"
         itemStockLevel.text = "Stock Level: ${item.stock}"
 
 
