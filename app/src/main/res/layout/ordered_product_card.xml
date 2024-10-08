@@ -35,27 +35,33 @@
             android:contentDescription="Product Name" />
 
         <!-- Units -->
+
+        <!-- Price -->
+
         <TextView
             android:id="@+id/productUnitsOrdered"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Units: 1"
-            android:textSize="14sp"
-            android:layout_below="@id/productNameOrdered"
+            android:layout_below="@+id/productPriceOrdered"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="7dp"
             android:layout_toEndOf="@id/productImageOrdered"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="4dp"
-            android:contentDescription="Product Units" />
+            android:contentDescription="Product Units"
+            android:text="Units: 1"
+            android:textSize="14sp" />
 
-        <!-- Price -->
         <TextView
             android:id="@+id/productPriceOrdered"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_below="@+id/productNameOrdered"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="7dp"
+            android:textColor="@color/apple_green"
+            android:layout_toEndOf="@+id/productImageOrdered"
+            android:contentDescription="Product Price"
             android:text="Rs 51"
             android:textSize="16sp"
-            android:textStyle="bold"
-            android:layout_alignParentEnd="true"
-            android:contentDescription="Product Price" />
+            android:textStyle="bold" />
     </RelativeLayout>
 </androidx.cardview.widget.CardView>

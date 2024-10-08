@@ -22,30 +22,67 @@
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="150dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="20dp"
             app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:layout_marginBottom="50dp"
+            android:textSize="32sp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="16sp"
+            />
 
         <EditText
             android:id="@+id/etUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_text_input"
             android:hint="Username"
-            android:textSize="20sp" />
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:textSize="16sp"
+            />
 
         <EditText
             android:id="@+id/etPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Password"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/custom_text_input"
             android:inputType="textPassword"
-            android:textSize="20sp" />
+            android:textSize="16sp" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btnLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Login"
-            android:backgroundTint="#1D4670"
+            android:textColor="@color/light_green"
+            android:backgroundTint="@color/dark"
+            android:textSize="20sp"
+            android:paddingVertical="10dp"
+            app:cornerRadius="10dp"
             android:layout_marginTop="20dp"/>
 
         <TextView

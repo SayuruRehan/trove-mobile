@@ -3,7 +3,6 @@ package com.example.trove_mobile.auth;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -14,6 +13,7 @@ import com.example.trove_mobile.MainActivity;
 import com.example.mobile_app_client.R;
 import com.example.trove_mobile.retrofit.ApiService;
 import com.example.trove_mobile.retrofit.RetrofitClient;
+import com.google.android.material.button.MaterialButton;
 import com.google.gson.Gson;
 
 import retrofit2.Call;
@@ -22,7 +22,7 @@ import retrofit2.Response;
 
 public class LoginActivity extends AppCompatActivity {
     private EditText etUsername, etPassword;
-    private Button btnLogin;
+    private MaterialButton btnLogin;
     private SharedPreferences sharedPreferences;
 
     @Override

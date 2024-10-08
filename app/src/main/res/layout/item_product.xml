@@ -53,6 +53,7 @@
             android:text="Price"
             android:textSize="18sp"
             android:textStyle="bold"
+            android:textColor="@color/apple_green"
             app:layout_constraintBottom_toBottomOf="@+id/productImage"
             app:layout_constraintEnd_toEndOf="@+id/productDescription"
             app:layout_constraintHorizontal_bias="0.0"

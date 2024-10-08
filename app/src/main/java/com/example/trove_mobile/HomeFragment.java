@@ -60,10 +60,12 @@ public class HomeFragment extends Fragment {
     // Setup auto-swiping image slider
     private void setupImageSlider() {
         imageUrls = new ArrayList<>();
-        imageUrls.add("https://img.freepik.com/premium-vector/black-friday-sale-banner-template-vector_7087-196.jpg");
-        imageUrls.add("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkNxQGIynkL5eTId6ZWf4slfqmNUHAg5S6CGthOHK_yCt_8xXFPUuCSCds147r-r5jgcg&usqp=CAU");
-        imageUrls.add("https://img.freepik.com/premium-vector/buy-one-get-one-free-sale-banner-special-banner-with-text-effect_535749-1568.jpg");
-        imageUrls.add("https://img.freepik.com/premium-vector/special-shopping-day-sale-banner-template-end-year-sale_32996-861.jpg");
+        imageUrls.add("https://img.freepik.com/premium-vector/special-offer-final-sale-banner-red-background-illustration_275806-121.jpg?w=900");
+        imageUrls.add("https://img.freepik.com/free-vector/modern-sale-banner-with-text-space-area_1017-27331.jpg");
+//        imageUrls.add("https://www.shutterstock.com/image-vector/big-sale-banner-discounts-vector-260nw-311461337.jpg");
+        imageUrls.add("https://c8.alamy.com/comp/2A5AH2N/sale-banner-template-design-big-sale-web-ad-banners-illustration-2A5AH2N.jpg");
+//        imageUrls.add("https://www.shutterstock.com/image-vector/super-sale-banner-poster-260nw-465195992.jpg");
+//        imageUrls.add("https://img.freepik.com/premium-vector/website-header-banner-with-super-sale-up-percent-off_419341-575.jpg");
 
         ImageSliderAdapter adapter = new ImageSliderAdapter(getActivity(), imageUrls);
         viewPager.setAdapter(adapter);

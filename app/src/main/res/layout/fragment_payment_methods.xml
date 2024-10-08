@@ -67,7 +67,7 @@
             android:layout_height="wrap_content"
             android:text="SAVE PAYMENT"
             android:textAllCaps="true"
-            android:backgroundTint="@color/red"
+            android:backgroundTint="@color/dark"
             android:textColor="@android:color/white"
             android:layout_marginTop="24dp"
             android:contentDescription="Save Payment Button" />

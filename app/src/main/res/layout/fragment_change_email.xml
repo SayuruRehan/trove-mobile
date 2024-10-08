@@ -36,7 +36,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Confirm"
-            android:backgroundTint="#1D4670"
+            android:textColor="@color/light_green"
+            android:backgroundTint="@color/dark"
             android:layout_marginTop="20dp"/>
     </LinearLayout>
 </FrameLayout>

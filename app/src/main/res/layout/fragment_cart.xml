@@ -70,8 +70,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="CHECK OUT"
-            android:backgroundTint="@color/red"
-            android:textColor="@color/white"
+            android:backgroundTint="@color/apple_green"
+            android:textColor="@color/dark"
             android:layout_marginTop="8dp"
             android:contentDescription="Checkout Button" />
     </LinearLayout>

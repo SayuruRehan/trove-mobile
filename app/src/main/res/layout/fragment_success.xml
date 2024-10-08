@@ -48,7 +48,7 @@
         android:layout_height="wrap_content"
         android:text="CONTINUE SHOPPING"
         android:textAllCaps="true"
-        android:backgroundTint="@color/red"
+        android:backgroundTint="@color/dark"
         android:textColor="@android:color/white"
         android:layout_marginTop="32dp"
         android:contentDescription="Continue Shopping Button" />

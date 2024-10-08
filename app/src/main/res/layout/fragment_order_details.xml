@@ -217,8 +217,8 @@
                     android:layout_height="wrap_content"
                     android:text="Cancel Order"
                     android:textAllCaps="false"
-                    android:backgroundTint="@color/red"
-                    android:textColor="@android:color/white"
+                    android:backgroundTint="@color/apple_green"
+                    android:textColor="@color/dark"
                     android:layout_marginEnd="16dp"
                     android:contentDescription="Cancel Order Button" />
 

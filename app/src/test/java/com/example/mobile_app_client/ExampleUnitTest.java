@@ -1,4 +1,4 @@
-package com.example.trove_mobile;
+package com.example.mobile_app_client;
 
 import org.junit.Test;
 

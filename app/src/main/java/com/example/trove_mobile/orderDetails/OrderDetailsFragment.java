@@ -257,7 +257,7 @@ public class OrderDetailsFragment extends Fragment {
 
         // Get userId from SharedPreferences (if required)
         SharedPreferences sharedPreferences = getActivity().getSharedPreferences("userSession", Context.MODE_PRIVATE);
-        String userId = sharedPreferences.getString("userId", null);
+        String userId = "";
         notification.setUserId(userId);
 
         // Log the notification details for debugging

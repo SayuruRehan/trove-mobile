@@ -141,7 +141,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Delete My Account"
-                    android:backgroundTint="#f00000"
+                    android:backgroundTint="@color/dark"
+                    android:textColor="@color/light_green"
                     android:layout_margin="16dp" />
             </LinearLayout>
         </LinearLayout>
