@@ -1,7 +1,12 @@
 package com.example.trove_mobile.models
 
+import java.io.Serializable
+
 data class EcommerceItem(
-    val name: String,
-    val price: Double,
-    val imageResId: Int // For demo purposes, use a drawable resource ID
-)
+    val id: String,
+    val productName: String,
+    val description: String,
+    val productPrice: Double,
+    val stock: Int,
+    val imageUrl: String
+) : Serializable

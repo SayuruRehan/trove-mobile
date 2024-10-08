@@ -1,5 +1,9 @@
 package com.example.trove_mobile.adapters
 
+import android.content.Context
+import android.content.Intent
+
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -8,10 +12,13 @@ import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide // Import Glide
 import com.example.trove_mobile.R
+import com.example.trove_mobile.activities.ProductDetailsActivity
 import com.example.trove_mobile.models.EcommerceItem
+import com.squareup.picasso.Picasso
 
-class EcommerceItemAdapter(private val items: List<EcommerceItem>) : RecyclerView.Adapter<EcommerceItemAdapter.EcommerceItemViewHolder>() {
+class EcommerceItemAdapter(private val context: Context ,private val items: List<EcommerceItem>) : RecyclerView.Adapter<EcommerceItemAdapter.EcommerceItemViewHolder>() {
 
     class EcommerceItemViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val productImage: ImageView = itemView.findViewById(R.id.product_image)
@@ -28,14 +35,35 @@ class EcommerceItemAdapter(private val items: List<EcommerceItem>) : RecyclerVie
     override fun onBindViewHolder(holder: EcommerceItemViewHolder, position: Int) {
         val item = items[position]
 
+        Log.d("EcommerceAdapter", "Items: ${item}");
+
+        // Debugging logs
+        Log.d("EcommerceAdapter","Binding item: ${item.productName}, Price: ${item.productPrice}, Image URL: ${item.imageUrl}")
+
         // Set product details
-        holder.productName.text = item.name
-        holder.productPrice.text = "$${item.price}"
-        holder.productImage.setImageResource(item.imageResId) // Replace with image loading library for real-world apps
+        holder.productName.text = item.productName
+        holder.productPrice.text = "Rs. ${item.productPrice}"
+
+        // Load image using Glide
+        Glide.with(holder.productImage.context)
+            .load(item.imageUrl) // Assuming item.imageUrl is the Cloudinary URL
+            .into(holder.productImage)
 
         holder.addToCartButton.setOnClickListener {
             // Handle add to cart logic
-            Toast.makeText(holder.itemView.context, "${item.name} added to cart", Toast.LENGTH_SHORT).show()
+            Toast.makeText(holder.itemView.context, "${item.productName} added to cart", Toast.LENGTH_SHORT).show()
+        }
+
+        // Set item data
+        Picasso.get().load(item.imageUrl).into(holder.productImage)
+        holder.productName.text = item.productName
+        holder.productPrice.text = "Price: $${item.productPrice}"
+
+        // Set click listener
+        holder.itemView.setOnClickListener {
+            val intent = Intent(context, ProductDetailsActivity::class.java)
+            intent.putExtra("item", item)
+            context.startActivity(intent)
         }
     }
 

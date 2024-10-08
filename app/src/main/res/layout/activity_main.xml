@@ -33,10 +33,10 @@
     <ImageView
         android:id="@+id/logo"
         android:layout_width="match_parent"
-        android:layout_height="100dp"
-        android:layout_marginTop="164dp"
-        android:scaleType="fitCenter"
-        android:src="@drawable/logo"
+        android:layout_height="150dp"
+        android:layout_marginTop="108dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/trove_logo"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="0dp" />
 
@@ -53,17 +53,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo"
         app:layout_constraintVertical_bias="0.05" />
-
-    <ImageView
-        android:id="@+id/product_image"
-        android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginTop="24dp"
-        android:scaleType="fitCenter"
-        android:src="@drawable/ecommerce_greeting"
-        app:layout_constraintBottom_toTopOf="@+id/button_get_started"
-        app:layout_constraintTop_toBottomOf="@+id/textView2"
-        tools:layout_editor_absoluteX="0dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

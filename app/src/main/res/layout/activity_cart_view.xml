@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/cart_view"
+    android:background="@color/white">
+    <!-- Total Price -->
+    <TextView
+        android:id="@+id/total_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Total: $0.00"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/blue"
+        android:gravity="end"
+        android:layout_marginHorizontal="16dp"
+        android:layout_above="@id/button_checkout"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Checkout Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/button_checkout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Checkout"
+        app:cornerRadius="5dp"
+        android:layout_margin="16dp"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/blue"
+        android:layout_above="@id/bottom_navigation"
+        android:textSize="16sp" />
+
+    <!-- ScrollView to hold the Cart Items -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@id/total_price"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- RecyclerView for Cart Items -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/cart_items_recycler_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <!-- Bottom Navigation Bar -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemRippleColor="@color/skyblue"
+        app:itemTextColor="@color/blue"
+        app:itemActiveIndicatorStyle="@color/lightblue"
+        app:itemIconTint="@color/blue"
+        app:itemTextAppearanceActiveBoldEnabled="true"
+        app:itemIconSize="30dp"
+        app:backgroundTint="@color/lightblue"
+        app:menu="@drawable/bottom_nav_menu" />
+</RelativeLayout>

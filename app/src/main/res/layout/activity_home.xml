@@ -11,12 +11,12 @@
     <LinearLayout
         android:id="@+id/home"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
         android:background="@color/white"
         android:padding="16dp"
         android:backgroundTint="@color/white"
-        android:layout_above="@id/bottom_navigation">
+        android:layout_above="@id/bottom_navigation"> <!-- Ensures it stays above bottom nav -->
 
         <!-- Profile Icon -->
         <ImageView
@@ -47,18 +47,11 @@
             android:paddingBottom="8dp">
 
             <LinearLayout
+                android:id="@+id/category_container"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="horizontal" />
 
-                <!-- Categories -->
-                <include layout="@layout/category_button" />
-                <include layout="@layout/category_button" />
-                <include layout="@layout/category_button" />
-                <include layout="@layout/category_button" />
-                <include layout="@layout/category_button" />
-                <!-- Add more buttons as needed -->
-            </LinearLayout>
         </HorizontalScrollView>
 
         <!-- Item List -->
@@ -66,7 +59,9 @@
             android:id="@+id/item_list"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="16dp"/>
+            android:layout_marginTop="16dp"
+            android:layout_above="@id/bottom_navigation"/> <!-- Ensure it's above the bottom nav -->
+
     </LinearLayout>
 
     <!-- Bottom Navigation Bar -->
@@ -75,6 +70,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        app:itemRippleColor="@color/skyblue"
+        app:itemTextColor="@color/blue"
+        app:itemActiveIndicatorStyle="@color/lightblue"
+        app:itemIconTint="@color/blue"
+        app:itemTextAppearanceActiveBoldEnabled="true"
+        app:itemIconSize="30dp"
+        app:backgroundTint="@color/lightblue"
         app:menu="@drawable/bottom_nav_menu" />
 
 </RelativeLayout>

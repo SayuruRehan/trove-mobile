@@ -26,7 +26,7 @@
         android:layout_height="50dp"
         android:layout_marginTop="100dp"
         android:scaleType="fitCenter"
-        android:src="@drawable/logo"
+        android:src="@drawable/trove_logo"
         app:layout_constraintTop_toTopOf="parent"
         tools:layout_editor_absoluteX="0dp" />
 
