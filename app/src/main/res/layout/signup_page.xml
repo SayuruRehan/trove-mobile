@@ -23,7 +23,7 @@
         android:id="@+id/logo"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="10dp"
         android:scaleType="fitCenter"
         android:src="@drawable/trove_logo"
         app:layout_constraintTop_toTopOf="parent"
@@ -41,19 +41,39 @@
         android:textSize="24sp" />
 
     <TextView
-        android:id="@+id/textViewUsernameSignup"
+        android:id="@+id/textViewFirstnameSignup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="50dp"
         android:textSize="16sp"
-        android:text="@string/signup_username" />
+        android:text="@string/signup_firstname" />
 
     <EditText
-        android:id="@+id/editTextUsernameSignup"
+        android:id="@+id/editTextFirstnameSignup"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="50dp"
-        android:layout_marginBottom="36dp"
+        android:layout_marginBottom="20dp"
+        android:width="300dp"
+        android:background="@drawable/custom_text_input"
+        android:ems="10"
+        android:inputType="text"
+        android:padding="10dp" />
+
+    <TextView
+        android:id="@+id/textViewLastnameSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:textSize="16sp"
+        android:text="@string/signup_lastname" />
+
+    <EditText
+        android:id="@+id/editTextLastnameSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginBottom="20dp"
         android:width="300dp"
         android:background="@drawable/custom_text_input"
         android:ems="10"
@@ -73,7 +93,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="50dp"
-        android:layout_marginBottom="36dp"
+        android:layout_marginBottom="20dp"
         android:autofillHints="test@example.com"
         android:width="300dp"
         android:background="@drawable/custom_text_input"
@@ -81,6 +101,27 @@
         android:inputType="textEmailAddress"
         android:padding="10dp"
         tools:ignore="LabelFor" />
+
+    <TextView
+        android:id="@+id/textViewPhoneSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:textSize="16sp"
+        android:text="@string/signup_phone" />
+
+    <EditText
+        android:id="@+id/editTextPhoneSignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginBottom="20dp"
+        android:width="300dp"
+        android:background="@drawable/custom_text_input"
+        android:ems="10"
+        android:inputType="text"
+        android:padding="10dp" />
+
 
     <TextView
         android:id="@+id/textViewPasswordSignup"
@@ -99,7 +140,7 @@
         android:background="@drawable/custom_text_input"
         android:ems="10"
         android:inputType="textPassword"
-        android:layout_marginBottom="36dp"
+        android:layout_marginBottom="20dp"
         android:padding="10dp" />
 
     <TextView
@@ -116,6 +157,7 @@
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="50dp"
         android:autofillHints="password"
+        android:layout_marginBottom="10dp"
         android:width="300dp"
         android:background="@drawable/custom_text_input"
         android:ems="10"
@@ -127,7 +169,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="50dp"
-        android:layout_marginVertical="40dp"
+        android:layout_marginVertical="5dp"
         android:width="300dp"
         android:backgroundTint="@color/dark"
         android:paddingVertical="10dp"
@@ -145,7 +187,7 @@
             android:id="@+id/have_account_already"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="30dp"
             android:text="@string/have_account_already"
             android:textAlignment="center" />
 

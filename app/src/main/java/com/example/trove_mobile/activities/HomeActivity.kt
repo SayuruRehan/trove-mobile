@@ -4,6 +4,7 @@ package com.example.trove_mobile.activities
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.LinearLayout
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
@@ -16,6 +17,7 @@ import com.example.trove_mobile.R
 import com.example.trove_mobile.adapters.EcommerceItemAdapter
 import com.example.trove_mobile.models.EcommerceItem
 import com.example.trove_mobile.repositories.ProductRepository
+import com.example.trove_mobile.utils.TokenManager
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.button.MaterialButton
 import retrofit2.Call
@@ -74,7 +76,6 @@ class HomeActivity : AppCompatActivity() {
                     val intent = Intent(this, ProfileActivity::class.java)
                     startActivity(intent)
                     true
-                    true
                 }
                 else -> false
             }
@@ -114,23 +115,25 @@ class HomeActivity : AppCompatActivity() {
 
     private fun fetchProducts() {
         // Replace with your JWT token
-        val token = "your_jwt_token_here"
+        val token = TokenManager.getToken()
 
-        productRepository.getProducts(token, object : Callback<List<EcommerceItem>> {
-            override fun onResponse(call: Call<List<EcommerceItem>>, response: Response<List<EcommerceItem>>) {
-                if (response.isSuccessful) {
-                    val items = response.body() ?: emptyList()
-                    // Set the Adapter
-                    recyclerView.adapter = EcommerceItemAdapter(this@HomeActivity, items)
+        if (token != null) {
+            productRepository.getProducts(token, object : Callback<List<EcommerceItem>> {
+                override fun onResponse(call: Call<List<EcommerceItem>>, response: Response<List<EcommerceItem>>) {
+                    if (response.isSuccessful) {
+                        val items = response.body() ?: emptyList()
+                        // Set the Adapter
+                        recyclerView.adapter = EcommerceItemAdapter(this@HomeActivity, items)
 
-                } else {
-                    Toast.makeText(this@HomeActivity, "Failed to fetch products", Toast.LENGTH_SHORT).show()
+                    } else {
+                        Toast.makeText(this@HomeActivity, "Failed to fetch products", Toast.LENGTH_SHORT).show()
+                    }
                 }
-            }
 
-            override fun onFailure(call: Call<List<EcommerceItem>>, t: Throwable) {
-                Toast.makeText(this@HomeActivity, "Error: ${t.message}", Toast.LENGTH_SHORT).show()
-            }
-        })
+                override fun onFailure(call: Call<List<EcommerceItem>>, t: Throwable) {
+                    Toast.makeText(this@HomeActivity, "Error: ${t.message}", Toast.LENGTH_SHORT).show()
+                }
+            })
+        }
     }
 }

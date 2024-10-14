@@ -14,8 +14,10 @@
 
     <!--    Signup-->
     <string name="signup_heading">Signup</string>
-    <string name="signup_username">Username</string>
+    <string name="signup_firstname">Firstname</string>
+    <string name="signup_lastname">Lastname</string>
     <string name="signup_email">Email</string>
+    <string name="signup_phone">Phone Number</string>
     <string name="signup_reenter_password">Reenter-Password</string>
     <string name="signup_password">Password</string>
     <string name="have_account_already">Have an account already?</string>

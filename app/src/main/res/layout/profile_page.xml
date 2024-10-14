@@ -61,23 +61,41 @@
             android:text="john.doe@example.com"
             android:textSize="16sp" />
 
-        <!-- Edit Profile Button -->
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/buttonEditProfile"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="24dp"
-            android:backgroundTint="@color/apple_green"
-            android:text="Edit Profile"
-            android:textColor="@color/light_green"
-            app:cornerRadius="10dp" />
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+
+            <!-- Edit Profile Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonEditProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/apple_green"
+                android:text="Edit Profile"
+                android:textColor="@color/light_green"
+                app:cornerRadius="10dp" />
+
+            <!-- Logout Button -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/buttonLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:backgroundTint="@android:color/black"
+                android:text="Logout"
+                android:textColor="@android:color/white"
+                app:cornerRadius="10dp" />
+        </LinearLayout>
 
         <!-- Divider -->
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
             android:layout_marginBottom="16dp"
-            android:background="#CCCCCC" />
+            android:background="@color/white" />
 
         <!-- About Section -->
         <LinearLayout

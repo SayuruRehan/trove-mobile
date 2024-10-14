@@ -41,6 +41,7 @@ class ProductDetailsActivity : AppCompatActivity() {
         itemStockLevel.text = "Stock Level: ${item.stock}"
 
 
+
         val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottom_navigation)
         bottomNavigationView.setOnNavigationItemSelectedListener { item ->
             when (item.itemId) {
@@ -57,6 +58,8 @@ class ProductDetailsActivity : AppCompatActivity() {
                 }
                 R.id.navigation_account -> {
                     // Navigate to Account screen
+                    val intent = Intent(this, ProfileActivity::class.java)
+                    startActivity(intent)
                     true
                 }
                 else -> false

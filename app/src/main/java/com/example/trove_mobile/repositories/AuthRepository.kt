@@ -2,10 +2,8 @@
 
 package com.example.trove_mobile.repositories
 
-import com.example.trove_mobile.models.api.LoginRequest
-import com.example.trove_mobile.models.api.LoginResponse
-import com.example.trove_mobile.network.ApiClient
-import com.example.trove_mobile.network.ApiService
+import com.example.trove_mobile.models.api.*
+import com.example.trove_mobile.network.*
 import retrofit2.Callback
 
 class AuthRepository {
@@ -13,6 +11,11 @@ class AuthRepository {
 
     fun login(request: LoginRequest, callback: Callback<LoginResponse>) {
         val call = apiService.login(request)
+        call.enqueue(callback)
+    }
+
+    fun signup(request: RegisterRequest, callback: Callback<RegisterResponse>){
+        val call = apiService.signup(request)
         call.enqueue(callback)
     }
 }
