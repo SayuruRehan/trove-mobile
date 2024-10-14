@@ -15,7 +15,7 @@ import androidx.viewpager2.widget.ViewPager2;
 
 import com.example.trove_mobile.Home.HomeAdapter;
 import com.example.trove_mobile.Home.ImageSliderAdapter;
-import com.example.mobile_app_client.R;
+import com.example.trove_mobile.R;
 import com.example.trove_mobile.product.Product;
 import com.example.trove_mobile.retrofit.ApiService;
 import com.example.trove_mobile.retrofit.RetrofitClient;

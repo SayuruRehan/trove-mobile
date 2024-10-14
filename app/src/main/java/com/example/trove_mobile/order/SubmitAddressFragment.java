@@ -16,7 +16,7 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
-import com.example.mobile_app_client.R;
+import com.example.trove_mobile.R;
 
 /**
  * Fragment for submitting or changing the shipping address.

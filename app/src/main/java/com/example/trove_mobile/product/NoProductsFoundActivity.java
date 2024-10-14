@@ -10,7 +10,7 @@ import android.widget.TextView;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.mobile_app_client.R;
+import com.example.trove_mobile.R;
 
 public class NoProductsFoundActivity extends AppCompatActivity {
     private String categoryName;

@@ -13,7 +13,7 @@ import android.widget.BaseAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.mobile_app_client.R;
+import com.example.trove_mobile.R;
 import com.example.trove_mobile.product.Product;
 import com.example.trove_mobile.product.ProductViewActivity;
 

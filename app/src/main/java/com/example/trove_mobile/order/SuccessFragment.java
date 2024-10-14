@@ -12,7 +12,7 @@ import android.widget.Button;
 
 import com.example.trove_mobile.HomeFragment;
 import com.example.trove_mobile.MainActivity;
-import com.example.mobile_app_client.R;
+import com.example.trove_mobile.R;
 
 /**
  * Fragment to display after a successful order.

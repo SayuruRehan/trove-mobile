@@ -17,7 +17,7 @@ import androidx.appcompat.widget.TooltipCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.trove_mobile.product.Product;
-import com.example.mobile_app_client.R;
+import com.example.trove_mobile.R;
 
 import java.util.List;
 

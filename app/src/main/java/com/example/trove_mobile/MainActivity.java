@@ -7,8 +7,8 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.os.Bundle;
 
-import com.example.mobile_app_client.R;
-import com.example.mobile_app_client.databinding.ActivityMainBinding;
+import com.example.trove_mobile.R;
+import com.example.trove_mobile.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 

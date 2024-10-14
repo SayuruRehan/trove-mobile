@@ -18,7 +18,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.trove_mobile.notification.Notification;
-import com.example.mobile_app_client.R;
+import com.example.trove_mobile.R;
 import com.example.trove_mobile.order.Order;
 import com.example.trove_mobile.product.Product;
 import com.example.trove_mobile.retrofit.ApiService;

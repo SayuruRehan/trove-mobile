@@ -13,7 +13,7 @@ import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.SeekBar;
 import android.widget.Toast;
-import com.example.mobile_app_client.R;
+import com.example.trove_mobile.R;
 import com.example.trove_mobile.retrofit.ApiService;
 import com.example.trove_mobile.retrofit.RetrofitClient;
 import com.example.trove_mobile.retrofit.UpdateOperation;

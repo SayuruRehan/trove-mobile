@@ -14,7 +14,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 
-import com.example.mobile_app_client.R;
+import com.example.trove_mobile.R;
 import com.example.trove_mobile.category.Category;
 import com.example.trove_mobile.product.ProductListActivity;
 import com.example.trove_mobile.retrofit.ApiService;
