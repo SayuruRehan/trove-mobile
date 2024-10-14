@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/orderDetailsContainer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <!-- Navigation Section -->
+    <RelativeLayout
+        android:id="@+id/navigationSection"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Back Arrow -->
+        <ImageView
+            android:id="@+id/backButtonOrderDetails"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_back_arrow"
+            android:contentDescription="Back"
+            android:layout_alignParentStart="true" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/orderDetailsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Details"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="Screen Title: Order Details" />
+    </RelativeLayout>
+
+    <!-- Main Content ScrollView -->
+    <ScrollView
+        android:id="@+id/orderDetailsScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/navigationSection">
+
+        <LinearLayout
+            android:id="@+id/mainContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Order Summary Section -->
+            <RelativeLayout
+                android:id="@+id/orderSummarySection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <!-- Order Number -->
+                <TextView
+                    android:id="@+id/orderNumberDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Order №1947034"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:contentDescription="Order Number" />
+
+                <!-- Order Date -->
+                <TextView
+                    android:id="@+id/orderDateDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="05-12-2019"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/darker_gray"
+                    android:layout_alignParentEnd="true"
+                    android:contentDescription="Order Date" />
+
+                <!-- Order Status -->
+                <TextView
+                    android:id="@+id/orderStatusDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delivered"
+                    android:textSize="14sp"
+                    android:textColor="@color/colorGreen"
+                    android:layout_below="@id/orderNumberDetails"
+                    android:layout_marginTop="8dp"
+                    android:contentDescription="Order Status" />
+
+                <!-- Item Count -->
+                <TextView
+                    android:id="@+id/orderItemCountDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3 items"
+                    android:textSize="14sp"
+                    android:layout_below="@id/orderStatusDetails"
+                    android:layout_marginTop="4dp"
+                    android:contentDescription="Order Item Count" />
+            </RelativeLayout>
+
+            <!-- Divider -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="16dp" />
+
+            <!-- Ordered Items List -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewOrderedItems"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false"
+                android:layout_marginTop="16dp" />
+
+            <!-- Order Information Section -->
+            <LinearLayout
+                android:id="@+id/orderInformationSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="16dp">
+
+                <!-- Shipping Address -->
+                <TextView
+                    android:id="@+id/shippingAddressLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shipping Address"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:contentDescription="Shipping Address Label" />
+
+                <TextView
+                    android:id="@+id/shippingAddressDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="123 Main Street, City, Country"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp"
+                    android:contentDescription="Shipping Address Details" />
+
+                <!-- Payment Method -->
+                <TextView
+                    android:id="@+id/paymentMethodLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Payment Method"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="16dp"
+                    android:contentDescription="Payment Method Label" />
+
+                <TextView
+                    android:id="@+id/paymentMethodText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Payment Reference"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp"
+                    android:contentDescription="Payment Method Details" />
+
+                <!-- Delivery Method -->
+                <TextView
+                    android:id="@+id/deliveryMethodLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Delivery Method"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="16dp"
+                    android:contentDescription="Delivery Method Label" />
+
+                <TextView
+                    android:id="@+id/deliveryMethodDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Postal Service"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp"
+                    android:contentDescription="Delivery Method Details" />
+
+                <!-- Total Amount -->
+                <TextView
+                    android:id="@+id/totalAmountLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Total Amount"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="16dp"
+                    android:contentDescription="Total Amount Label" />
+
+                <TextView
+                    android:id="@+id/totalAmountDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Rs 133"
+                    android:textSize="14sp"
+                    android:layout_marginTop="4dp"
+                    android:contentDescription="Total Amount Details" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/actionButtonsSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="24dp"
+                android:gravity="center_horizontal"
+                android:layout_below="@id/orderInformationSection">
+
+                <!-- Cancel Order Button -->
+                <Button
+                    android:id="@+id/buttonCancelOrder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Cancel Order"
+                    android:textAllCaps="false"
+                    android:backgroundTint="@color/red"
+                    android:textColor="@android:color/white"
+                    android:layout_marginEnd="16dp"
+                    android:contentDescription="Cancel Order Button" />
+
+                <!-- Other buttons if any -->
+            </LinearLayout>
+            <!-- Progress Bar -->
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:layout_marginTop="16dp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollViewSubmitAddress"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/submitAddressContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Navigation Section -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Back Arrow -->
+            <ImageView
+                android:id="@+id/backButtonSubmitAddress"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_back_arrow"
+                android:contentDescription="Back"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:focusable="true"
+                android:clickable="true" />
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/submitAddressTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Adding Shipping Address"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="Screen Title: Adding Shipping Address" />
+        </RelativeLayout>
+
+        <!-- Form Fields Section -->
+        <EditText
+            android:id="@+id/editTextFullName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full name"
+            android:inputType="textPersonName"
+            android:layout_marginTop="16dp"
+            android:contentDescription="Full name input field" />
+
+        <EditText
+            android:id="@+id/editTextAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Address"
+            android:inputType="textPostalAddress"
+            android:layout_marginTop="8dp"
+            android:contentDescription="Address input field" />
+
+        <EditText
+            android:id="@+id/editTextCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="City"
+            android:inputType="text"
+            android:layout_marginTop="8dp"
+            android:contentDescription="City input field" />
+
+        <EditText
+            android:id="@+id/editTextState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="State/Province/Region"
+            android:inputType="text"
+            android:layout_marginTop="8dp"
+            android:contentDescription="State/Province/Region input field" />
+
+        <EditText
+            android:id="@+id/editTextZipCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Zip Code (Postal Code)"
+            android:inputType="number"
+            android:layout_marginTop="8dp"
+            android:contentDescription="Zip Code input field" />
+
+        <EditText
+            android:id="@+id/editTextMobileNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Mobile Number"
+            android:inputType="phone"
+            android:layout_marginTop="8dp"
+            android:contentDescription="Mobile Number input field" />
+
+        <!-- Save Address Button -->
+        <Button
+            android:id="@+id/buttonSaveAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SAVE ADDRESS"
+            android:textAllCaps="true"
+            android:backgroundTint="@color/red"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="24dp"
+            android:contentDescription="Save Address Button" />
+    </LinearLayout>
+</ScrollView>

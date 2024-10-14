@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollViewPaymentMethods"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/paymentMethodsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Navigation Section -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Back Arrow -->
+            <ImageView
+                android:id="@+id/backButtonPayment"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_back_arrow"
+                android:contentDescription="Back"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:focusable="true"
+                android:clickable="true" />
+
+            <!-- Title -->
+            <TextView
+                android:id="@+id/paymentMethodsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment Methods"
+                android:textStyle="bold"
+                android:textSize="24sp"
+                android:layout_centerHorizontal="true"
+                android:contentDescription="Screen Title: Payment Methods" />
+        </RelativeLayout>
+
+        <!-- References Section -->
+        <TextView
+            android:id="@+id/referencesLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment Reference"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:contentDescription="References Label" />
+
+        <EditText
+            android:id="@+id/referencesInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter payment reference"
+            android:layout_marginTop="8dp"
+            android:contentDescription="References Input Field" />
+
+        <!-- Save Payment Button -->
+        <Button
+            android:id="@+id/savePaymentButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SAVE PAYMENT"
+            android:textAllCaps="true"
+            android:backgroundTint="@color/red"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="24dp"
+            android:contentDescription="Save Payment Button" />
+    </LinearLayout>
+</ScrollView>

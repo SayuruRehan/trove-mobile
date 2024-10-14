@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/orderedProductCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Product Image -->
+        <ImageView
+            android:id="@+id/productImageOrdered"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/product_image"
+            android:contentDescription="Product Image"
+            android:scaleType="centerCrop" />
+
+        <!-- Product Name -->
+        <TextView
+            android:id="@+id/productNameOrdered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Product Name"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_toEndOf="@id/productImageOrdered"
+            android:layout_marginStart="16dp"
+            android:contentDescription="Product Name" />
+
+        <!-- Units -->
+        <TextView
+            android:id="@+id/productUnitsOrdered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Units: 1"
+            android:textSize="14sp"
+            android:layout_below="@id/productNameOrdered"
+            android:layout_toEndOf="@id/productImageOrdered"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:contentDescription="Product Units" />
+
+        <!-- Price -->
+        <TextView
+            android:id="@+id/productPriceOrdered"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rs 51"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="Product Price" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

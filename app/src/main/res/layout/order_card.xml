@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/orderCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Order Number -->
+        <TextView
+            android:id="@+id/orderNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order No: 1947034"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:contentDescription="Order Number" />
+
+        <!-- Order Date -->
+        <TextView
+            android:id="@+id/orderDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="05-12-2019"
+            android:textSize="14sp"
+            android:textColor="@android:color/darker_gray"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="Order Date" />
+
+        <!-- Quantity -->
+        <TextView
+            android:id="@+id/orderQuantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quantity: 3"
+            android:textSize="14sp"
+            android:layout_below="@id/orderNumber"
+            android:layout_marginTop="8dp"
+            android:contentDescription="Order Quantity" />
+
+        <!-- Total Amount -->
+        <TextView
+            android:id="@+id/orderTotalAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total Amount: Rs 112"
+            android:textSize="14sp"
+            android:layout_below="@id/orderQuantity"
+            android:layout_marginTop="4dp"
+            android:contentDescription="Order Total Amount" />
+
+        <!-- Order Status -->
+        <TextView
+            android:id="@+id/orderStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delivered"
+            android:textSize="14sp"
+            android:textColor="@color/colorGreen"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/orderDate"
+            android:layout_marginTop="8dp"
+            android:contentDescription="Order Status" />
+
+        <!-- Details Button -->
+        <Button
+            android:id="@+id/buttonOrderDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Details"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/red"
+            android:textColor="@android:color/white"
+            android:layout_below="@id/orderTotalAmount"
+            android:layout_marginTop="8dp"
+            android:contentDescription="View Order Details" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

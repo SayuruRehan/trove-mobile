@@ -1,23 +1,9 @@
 <resources>
-    <string name="app_name">Trove-mobile</string>
+    <string name="app_name">E-Commerce</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <!-- strings.xml -->
+    <string name="decrease_quantity">Decrease quantity</string>
+    <string name="increase_quantity">Increase quantity</string>
+    <string name="delete_item">Delete item</string>
 
-    <!-- Get Started -->
-    <string name="get_started">Get Started</string>
-
-
-    <!--    login-->
-    <string name="login_heading">Login</string>
-    <string name="login_username">Username</string>
-    <string name="login_password">Password</string>
-    <string name="dont_have_account">Don\'t have an account?</string>
-    <string name="signup_link">Signup</string>
-
-    <!--    Signup-->
-    <string name="signup_heading">Signup</string>
-    <string name="signup_username">Username</string>
-    <string name="signup_email">Email</string>
-    <string name="signup_reenter_password">Reenter-Password</string>
-    <string name="signup_password">Password</string>
-    <string name="have_account_already">Have an account already?</string>
-    <string name="login_link">Login</string>
 </resources>
