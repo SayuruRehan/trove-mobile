@@ -1,4 +1,4 @@
-package com.example.mobile_app_client;
+package com.example.trove_mobile;
 
 import android.content.Context;
 
