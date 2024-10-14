@@ -17,7 +17,7 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.trove_mobile.R;
+import com.example.mobile_app_client.R;
 import com.example.trove_mobile.cart.Cart;
 import com.example.trove_mobile.cart.CartAdapter;
 import com.example.trove_mobile.cart.CartItem;

@@ -10,7 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.trove_mobile.R;
+import com.example.mobile_app_client.R;
 import com.example.trove_mobile.reviews.RatingResponse;
 
 import java.text.ParseException;

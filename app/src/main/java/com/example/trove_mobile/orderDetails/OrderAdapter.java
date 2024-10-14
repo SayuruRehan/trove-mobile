@@ -13,7 +13,7 @@ import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.trove_mobile.MainActivity;
-import com.example.trove_mobile.R;
+import com.example.mobile_app_client.R;
 import com.example.trove_mobile.order.Order;
 
 import java.text.SimpleDateFormat;

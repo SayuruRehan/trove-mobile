@@ -14,7 +14,7 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.trove_mobile.ProfileFragment;
-import com.example.trove_mobile.R;
+import com.example.mobile_app_client.R;
 import com.example.trove_mobile.retrofit.ApiService;
 import com.example.trove_mobile.retrofit.RetrofitClient;
 import com.example.trove_mobile.retrofit.UpdateOperation;

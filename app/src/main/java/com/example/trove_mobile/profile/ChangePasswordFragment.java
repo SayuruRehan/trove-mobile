@@ -14,7 +14,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.trove_mobile.R;
+import com.example.mobile_app_client.R;
 import com.example.trove_mobile.auth.LoginActivity;
 import com.example.trove_mobile.auth.LoginRequest;
 import com.example.trove_mobile.auth.LoginResponse;

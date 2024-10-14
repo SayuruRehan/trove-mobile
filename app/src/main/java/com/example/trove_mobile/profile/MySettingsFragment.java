@@ -16,7 +16,7 @@ import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
 
-import com.example.trove_mobile.R;
+import com.example.mobile_app_client.R;
 import com.example.trove_mobile.auth.LoginActivity;
 import com.example.trove_mobile.retrofit.ApiService;
 import com.example.trove_mobile.retrofit.RetrofitClient;

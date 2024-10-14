@@ -18,7 +18,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.trove_mobile.R;
+import com.example.mobile_app_client.R;
 import com.example.trove_mobile.payment.Payment;
 import com.example.trove_mobile.payment.PaymentMethodsFragment;
 import com.example.trove_mobile.product.Product;

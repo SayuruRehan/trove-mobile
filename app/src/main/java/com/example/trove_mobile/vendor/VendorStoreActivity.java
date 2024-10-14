@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.example.trove_mobile.R;
+import com.example.mobile_app_client.R;
 import com.example.trove_mobile.retrofit.ApiService;
 import com.example.trove_mobile.retrofit.RetrofitClient;
 import com.example.trove_mobile.reviews.RatingResponse;

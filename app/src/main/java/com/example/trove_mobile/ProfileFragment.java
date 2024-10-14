@@ -18,7 +18,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.trove_mobile.R;
+import com.example.mobile_app_client.R;
 import com.example.trove_mobile.auth.LoginActivity;
 import com.example.trove_mobile.orderDetails.MyOrdersFragment;
 import com.example.trove_mobile.profile.MySettingsFragment;
