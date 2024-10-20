@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:elevation="6dp"
+    app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp">
+
+        <!-- Rating Bar -->
+        <RatingBar
+            android:id="@+id/reviewRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:isIndicator="true"
+            android:numStars="5"
+            android:progressTint="#EDB320"
+            android:stepSize="1"
+            android:scaleX="0.75"
+            android:scaleY="0.75"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <!-- Reviewer Name -->
+        <TextView
+            android:id="@+id/reviewerNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Customer Name"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/reviewRatingBar"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="8dp" />
+
+        <!-- Review Comment -->
+        <TextView
+            android:id="@+id/commentTextView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Review comment goes here"
+            android:textSize="14sp"
+            app:layout_constraintTop_toBottomOf="@id/reviewRatingBar"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_margin="8dp" />
+
+        <!-- Review Date -->
+        <TextView
+            android:id="@+id/dateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Review date"
+            android:textSize="12sp"
+            app:layout_constraintTop_toBottomOf="@id/commentTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
